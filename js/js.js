@@ -24,16 +24,19 @@ $(function(){
    			
    			node.innerText=txt.value;
    			node.style.left=0;
+   			node.style.fontSize=12+parseInt(Math.random()*50)+'px';
+   			node.style.color='#f'+parseInt(Math.random()*100)
    			move(node)
    			
 
 
-   		 //    danmus.push(node);
+   		 	//danmus.push(node);
    			// wrap.appendChild(danmus[danmus.length-1]);
    			// console.log(danmus)
 
 
    			wrap.appendChild(node)
+   			txt.value='';
    		}
    }
    
